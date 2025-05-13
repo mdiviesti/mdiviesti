@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --primary: #409bff;
@@ -196,6 +197,25 @@
         .project-title {
             font-size: 1.25rem;
             margin-bottom: 0.5rem;
+        }
+        
+        .project-status {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            color: var(--light);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .project-status a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .project-status a:hover {
+            text-decoration: underline;
         }
         
         .cta-button {
@@ -412,7 +432,7 @@
                     <li>Software architecture &amp; system design</li>
                 </ul>
                 
-                <p>Currently building <strong>KezelOS</strong> – an AI-powered, accessibility-first Android OS fork, and <strong>Questitch</strong> – a tabletop GM toolset with procedural campaign generation.</p>
+                <p>Currently building <strong>KezelOS</strong> – an AI-powered, accessibility-first Android OS fork under <a href="https://github.com/KezelLabs" target="_blank" rel="noopener">KezelLabs</a>, and <strong>Questitch</strong> – a tabletop GM toolset with procedural campaign generation through <a href="https://github.com/slycubgames" target="_blank" rel="noopener">slycubgames</a>.</p>
                 
                 <div class="quote">
                     "I'm not a wizard, I just play one in my repo." – Me, probably
@@ -437,6 +457,7 @@
                     <div class="project-content">
                         <h3 class="project-title">KezelOS</h3>
                         <p>An AI-powered, accessibility-first Android OS fork for the chaos-resistant. Making an OS so user-friendly, even your grandma can root it.</p>
+                        <p class="project-status"><i class="fas fa-code-branch"></i> In active development under <a href="https://github.com/KezelLabs" target="_blank" rel="noopener">KezelLabs</a> organization</p>
                     </div>
                 </div>
                 
@@ -444,6 +465,7 @@
                     <div class="project-content">
                         <h3 class="project-title">Questitch</h3>
                         <p>The tabletop GM toolset with more random encounters than a rogue with a bag of holding. Procedural campaign generation for GMs who forgot their notes at home.</p>
+                        <p class="project-status"><i class="fas fa-code-branch"></i> New project by <a href="https://github.com/slycubgames" target="_blank" rel="noopener">slycubgames</a></p>
                     </div>
                 </div>
             </div>

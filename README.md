@@ -2,7 +2,7 @@
 
 ![Chaos](https://img.shields.io/badge/Chaos-Level_999-%23409bff?style=flat-square)
 ![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=flat-square&logo=git&logoColor=white)![Git](https://img.shields.io/badge/2.43-white.svg?style=flat-square&logoColor=%23F05033)
-![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)![Node.js](https://img.shields.io/badge/22.0.0-white?style=flat-square&logoColor=6DA55F)
+![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)![Node.js](https://img.shields.io/badge/22.0.0-white.svg?style=flat-square&logoColor=6DA55F)
 ![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat-square&logo=express&logoColor=%2361DAFB)![Express.js](https://img.shields.io/badge/4.18.2-%2361DAFB.svg?style=flat-square&logoColor=%23404d59)
 ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=flat-square&logo=npm&logoColor=white)![NPM](https://img.shields.io/badge/10.2.4-white.svg?style=flat-square&logoColor=%23CB3837)
 
@@ -17,7 +17,7 @@
 ![Swift](https://img.shields.io/badge/Swift-F54A2A?style=flat-square&logo=swift&logoColor=white)![Swift](https://img.shields.io/badge/5.10-white?style=flat-square&logoColor=F54A2A)
 ![C](https://img.shields.io/badge/C-%2300599C.svg?style=flat-square&logo=c&logoColor=white)![C](https://img.shields.io/badge/C23-white.svg?style=flat-square&logoColor=%2300599C)
 ![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)![C++](https://img.shields.io/badge/23-white.svg?style=flat-square&logoColor=%2300599C)
-![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=flat-square&logo=php&logoColor=white)![PHP](https://img.shields.io/badge/8.3-white.svg?style=flat-square&logoColor=%23777BB4)
+![PHP](https://img.shields.io/badge/PHP-%73777BB4.svg?style=flat-square&logo=php&logoColor=white)![PHP](https://img.shields.io/badge/8.3-white.svg?style=flat-square&logoColor=%73777BB4)
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white)![MongoDB](https://img.shields.io/badge/7.0-white.svg?style=flat-square&logoColor=%234ea94b)
 ![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?style=flat-square&logo=mysql&logoColor=white)![MySQL](https://img.shields.io/badge/8.2-white.svg?style=flat-square&logoColor=%2300f)
@@ -28,9 +28,9 @@
 
 > “I’m not a wizard, I just play one in my repo.” – Me, probably
 
-🚀 Currently building: **KezelOS** – An AI-powered, accessibility-first Android OS fork for the chaos-resistant
+🚀 Currently building: **KezelOS** – An AI-powered, accessibility-first Android OS fork for the chaos-resistant (via [KezelLabs](https://github.com/KezelLabs))
 
-🎲 Crafting: **Questitch** – The tabletop GM toolset with more random encounters than a rogue with a bag of holding
+🎲 Crafting: **Questitch** – The tabletop GM toolset with more random encounters than a rogue with a bag of holding (via [slycubgames](https://github.com/slycubgames))
 
 💼 Moonlighting as: An Engineering Manager, because someone’s gotta keep the ship from catching fire
 
