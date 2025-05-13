@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Diviesti | Software Engineer & Engineering Manager</title>
+    <meta name="description" content="Michael Diviesti - Staff Lead Software Engineer and Engineering Manager with 20+ years of experience in full-stack development, mobile engineering, and AI integration.">
+    <meta name="keywords" content="Software Engineer, Engineering Manager, Full-Stack Developer, Mobile Developer, Swift, Kotlin, Node.js, Python, React, AI Integration, Software Architecture">
+    <meta name="author" content="Michael Diviesti">
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Michael Diviesti | Software Engineer & Engineering Manager">
+    <meta property="og:description" content="Strategic engineering leader with expertise in full-stack development, mobile engineering, and AI-powered workflows.">
+    <meta property="og:image" content="assets/profile.jpg">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://mdiviesti.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #409bff;
+            --dark: #404756;
+            --light: #a4abbd;
+            --white: #ffffff;
+            --background: #f9fafb;
+            --shadow: rgba(64, 71, 86, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--background);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 1rem 0;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .logo {
+            height: 40px;
+            width: auto;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        .hero {
+            padding: 2rem 0 6rem;
+            position: relative;
+            margin-top: 2rem;
+        }
+        
+        .hero-content {
+            padding-right: 0;
+            margin-left: 220px; /* Space for the floating image */
+        }
+        
+        .hero-image {
+            position: absolute;
+            left: 20px;
+            top: -10px; /* Position above the hero section content */
+            width: 180px;
+            float: left;
+            margin-right: 20px;
+            z-index: 1; /* Ensure it's above other content but below the header */
+        }
+        
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            border: 5px solid var(--white);
+            box-shadow: 0 10px 20px var(--shadow);
+            object-fit: cover;
+        }
+        
+        .hero-badges {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            position: relative;
+            display: inline-block;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .tagline {
+            font-size: 1.25rem;
+            color: var(--light);
+            margin-bottom: 1.5rem;
+        }
+        
+        .projects {
+            padding: 4rem 0;
+            background-color: var(--white);
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--dark);
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary);
+            border-radius: 2px;
+        }
+        
+        .project-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .project-card {
+            background-color: var(--background);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px var(--shadow);
+        }
+        
+        .project-content {
+            padding: 1.5rem;
+        }
+        
+        .project-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 1.5rem;
+        }
+        
+        .cta-button:hover {
+            background-color: #3382db;
+            transform: scale(1.05);
+        }
+        
+        .random-facts {
+            padding: 4rem 0;
+            background-color: var(--background);
+        }
+        
+        .facts-list {
+            list-style: none;
+        }
+        
+        .facts-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .facts-list li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: var(--white);
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            color: var(--white);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary);
+        }
+        
+        .quote {
+            font-style: italic;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: rgba(64, 155, 255, 0.1);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .burger-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        
+        .burger-menu span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--dark);
+            margin: 2px 0;
+            transition: all 0.3s;
+        }
+        
+        .tech-group {
+            margin-bottom: 2rem;
+        }
+        
+        .tech-group h3 {
+            margin-bottom: 1rem;
+            color: var(--light);
+            font-size: 1rem;
+        }
+        
+        .section-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        /* Media queries for responsiveness */
+        @media (max-width: 768px) {
+            .hero {
+                text-align: center;
+                padding: 2rem 0 2rem;
+                margin-top: 120px; /* Space for the image above */
+            }
+            
+            .hero-content {
+                margin-left: 0;
+                margin-top: 0;
+            }
+            
+            h1::after, .section-title::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            
+            .section-title {
+                display: block;
+            }
+            
+            .hero-badges {
+                justify-content: center;
+            }
+            
+            .burger-menu {
+                display: flex;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: var(--white);
+                flex-direction: column;
+                box-shadow: 0 5px 10px var(--shadow);
+                padding: 1rem 0;
+                text-align: center;
+            }
+            
+            nav.active ul {
+                display: flex;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .hero-image {
+                position: absolute;
+                width: 140px;
+                left: 50%;
+                top: -160px; /* Position it above the hero content */
+                transform: translateX(-50%);
+                float: none;
+                margin-right: 0;
+            }
+            
+            .facts-list {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <img src="assets/logo.svg" alt="Michael Diviesti Logo" class="logo">
+            <nav id="navbar">
+                <div class="burger-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#tech">Tech Stack</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="about">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hey, I'm Michael Diviesti</h1>
+                <p class="tagline">Staff Lead Engineer & Engineering Manager</p>
+                
+                <p>Strategic engineering leader with 20+ years experience in <strong>software engineering</strong>, <strong>full-stack development</strong>, and <strong>engineering management</strong>. I specialize in leveraging AI to drive team productivity and product excellence.</p>
+                
+                <p>My expertise spans:</p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li>Full-stack development (Node.js, Python, React)</li>
+                    <li>Mobile development (Swift, Kotlin, Objective-C)</li>
+                    <li>AI-powered development workflows</li>
+                    <li>Leading distributed engineering teams</li>
+                    <li>Software architecture &amp; system design</li>
+                </ul>
+                
+                <p>Currently building <strong>KezelOS</strong> – an AI-powered, accessibility-first Android OS fork, and <strong>Questitch</strong> – a tabletop GM toolset with procedural campaign generation.</p>
+                
+                <div class="quote">
+                    "I'm not a wizard, I just play one in my repo." – Me, probably
+                </div>
+                
+                <p>I'm passionate about empathetic leadership, scalable processes, and leveraging emerging technologies to solve complex challenges.</p>
+                
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/profile.jpg" alt="Michael Diviesti - Software Engineer and Engineering Manager">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Current Projects</h2>
+            
+            <div class="project-cards">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">KezelOS</h3>
+                        <p>An AI-powered, accessibility-first Android OS fork for the chaos-resistant. Making an OS so user-friendly, even your grandma can root it.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Questitch</h3>
+                        <p>The tabletop GM toolset with more random encounters than a rogue with a bag of holding. Procedural campaign generation for GMs who forgot their notes at home.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="random-facts" id="facts">
+        <div class="container section-container">
+            <h2 class="section-title">Random Facts You Didn't Ask For</h2>
+            
+            <ul class="facts-list">
+                <li>I once used AI to write lyrics to a TikTok dance song for a fifth grader's history project. It slapped.</li>
+                <li>I think in SQL queries and speak in sarcastic comments.</li>
+                <li>If there's a way to automate it, I'm already writing a shell script for it.</li>
+                <li>I can (and will) reference <em>Ocean's Eleven</em> in any conversation.</li>
+                <li>If my life were a heist movie, the soundtrack would be a mix of lo-fi hip hop and <em>Yakety Sax</em>.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-tech" id="tech">
+        <div class="container section-container">
+            <h2 class="section-title">Tech Stack</h2>
+            
+            <div class="tech-group">
+                <h3>Core Technologies</h3>
+                <div class="hero-badges">
+                    <img src="https://img.shields.io/badge/Git-%23F05033.svg?style=flat-square&logo=git&logoColor=white" alt="Git">
+                    <img src="https://img.shields.io/badge/2.43-white.svg?style=flat-square&logoColor=%23F05033" alt="Git version">
+                    <img src="https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white" alt="Node.js">
+                    <img src="https://img.shields.io/badge/22.0.0-white?style=flat-square&logoColor=6DA55F" alt="Node.js version">
+                    <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
+                    <img src="https://img.shields.io/badge/6.8-black?style=flat-square&logoColor=FCC624" alt="Linux version">
+                </div>
+            </div>
+            
+            <div class="tech-group">
+                <h3>Languages</h3>
+                <div class="hero-badges">
+                    <img src="https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E" alt="JavaScript">
+                    <img src="https://img.shields.io/badge/ES2023-%23F7DF1E.svg?style=flat-square&logoColor=%23323330" alt="JavaScript version">
+                    <img src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54" alt="Python">
+                    <img src="https://img.shields.io/badge/3.12-ffdd54?style=flat-square&logoColor=3670A0" alt="Python version">
+                    <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white" alt="Java">
+                    <img src="https://img.shields.io/badge/21-white.svg?style=flat-square&logoColor=%23ED8B00" alt="Java version">
+                    <img src="https://img.shields.io/badge/Kotlin-%237F52FF.svg?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin">
+                    <img src="https://img.shields.io/badge/2.0-white.svg?style=flat-square&logoColor=%237F52FF" alt="Kotlin version">
+                    <img src="https://img.shields.io/badge/Swift-F54A2A?style=flat-square&logo=swift&logoColor=white" alt="Swift">
+                    <img src="https://img.shields.io/badge/5.10-white?style=flat-square&logoColor=F54A2A" alt="Swift version">
+                </div>
+            </div>
+            
+            <div class="tech-group">
+                <h3>Frameworks & Libraries</h3>
+                <div class="hero-badges">
+                    <img src="https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB" alt="React">
+                    <img src="https://img.shields.io/badge/19.0-%2361DAFB.svg?style=flat-square&logoColor=%2320232a" alt="React version">
+                    <img src="https://img.shields.io/badge/Vue.js-%2335495e.svg?style=flat-square&logo=vuedotjs&logoColor=%234FC08D" alt="Vue.js">
+                    <img src="https://img.shields.io/badge/3.4-%234FC08D.svg?style=flat-square&logoColor=%2335495e" alt="Vue.js version">
+                    <img src="https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat-square&logo=express&logoColor=%2361DAFB" alt="Express.js">
+                    <img src="https://img.shields.io/badge/4.18.2-%2361DAFB.svg?style=flat-square&logoColor=%23404d59" alt="Express.js version">
+                    <img src="https://img.shields.io/badge/SwiftUI-F05138?style=flat-square&logo=swift&logoColor=white" alt="SwiftUI">
+                    <img src="https://img.shields.io/badge/4.0-white?style=flat-square&logoColor=F05138" alt="SwiftUI version">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <div>
+                <h3>Get In Touch</h3>
+                <p>Have a heist proposal? Let's talk.</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/michaeldiviesti" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a>
+                <a href="https://twitter.com/michael_atx" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+                <a href="https://mdiviesti.com" target="_blank" rel="noopener noreferrer" aria-label="Website">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 16.057v-3.057h2.994c-.059 1.143-.212 2.24-.456 3.279-.823-.12-1.674-.188-2.538-.222zm1.957 2.162c-.499 1.33-1.159 2.497-1.957 3.456v-3.62c.666.028 1.319.081 1.957.164zm-1.957-7.219v-3.015c.868-.034 1.721-.103 2.548-.224.238 1.027.389 2.111.446 3.239h-2.994zm0-5.014v-3.661c.806.969 1.471 2.15 1.971 3.496-.642.084-1.3.137-1.971.165zm2.703-3.267c1.237.496 2.354 1.228 3.29 2.146-.642.234-1.311.442-2.019.607-.344-.992-.775-1.91-1.271-2.753zm-7.241 13.56c-.244-1.039-.398-2.136-.456-3.279h2.994v3.057c-.865.034-1.714.102-2.538.222zm2.538 1.776v3.62c-.798-.959-1.458-2.126-1.957-3.456.638-.083 1.291-.136 1.957-.164zm-2.994-7.055c.057-1.128.207-2.212.446-3.239.827.121 1.68.19 2.548.224v3.015h-2.994zm1.024-5.179c.5-1.346 1.165-2.527 1.97-3.496v3.661c-.671-.028-1.329-.081-1.97-.165zm-2.005-.35c-.708-.165-1.377-.373-2.018-.607.937-.918 2.053-1.65 3.29-2.146-.496.844-.927 1.762-1.272 2.753zm-.549 1.918c-.264 1.151-.434 2.36-.492 3.611h-3.933c.165-1.658.739-3.197 1.617-4.518.88.361 1.816.67 2.808.907zm.009 9.262c-.988.236-1.92.542-2.797.9-.89-1.328-1.471-2.879-1.637-4.551h3.934c.058 1.265.231 2.488.5 3.651zm.553 1.917c.342.976.768 1.881 1.257 2.712-1.223-.49-2.326-1.211-3.256-2.115.636-.229 1.299-.435 1.999-.597zm9.924 0c.7.163 1.362.367 1.999.597-.931.903-2.034 1.625-3.257 2.116.489-.832.915-1.737 1.258-2.713zm.553-1.917c.27-1.163.442-2.386.501-3.651h3.934c-.167 1.672-.748 3.223-1.638 4.551-.877-.358-1.81-.664-2.797-.9zm.501-5.651c-.058-1.251-.229-2.46-.492-3.611.992-.237 1.929-.546 2.809-.907.877 1.321 1.451 2.86 1.616 4.518h-3.933z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        
+        <div class="container" style="text-align: center; padding-top: 2rem; opacity: 0.7;">
+            <p>&copy; 2025 Michael Diviesti | Chaos Level 999</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navbar').classList.toggle('active');
+        }
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navbar = document.getElementById('navbar');
+            const burgerMenu = document.querySelector('.burger-menu');
+            
+            if (!navbar.contains(event.target) || (navbar.contains(event.target) && event.target.tagName === 'A')) {
+                navbar.classList.remove('active');
+            }
+        });
+    </script>
+    
+    <!-- Structured data for Search Engines -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Michael Diviesti",
+      "jobTitle": "Staff Lead Engineer & Engineering Manager",
+      "url": "https://mdiviesti.com",
+      "image": "https://mdiviesti.com/assets/profile.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/michaeldiviesti",
+        "https://twitter.com/michael_atx"
+      ],
+      "description": "Strategic engineering leader with 20+ years experience in software engineering, full-stack development, and engineering management.",
+      "knowsAbout": ["Software Engineering", "Full-stack Development", "Engineering Management", "Mobile Development", "AI Integration"],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Technology Industry"
+      }
+    }
+    </script>
+</body>
+</html>
