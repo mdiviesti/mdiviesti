@@ -1,4 +1,30 @@
-# 👋 Hey, I’m Michael Diviesti
+# 👋 Hey, I’m Michael Diviesti!
+
+![Chaos](https://img.shields.io/badge/Chaos-Level_999-%23409bff?style=flat-square)
+![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=flat-square&logo=git&logoColor=white)![Git](https://img.shields.io/badge/2.43-white.svg?style=flat-square&logoColor=%23F05033)
+![Node.js](https://img.shields.io/badge/Node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white)![Node.js](https://img.shields.io/badge/22.0.0-white?style=flat-square&logoColor=6DA55F)
+![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?style=flat-square&logo=express&logoColor=%2361DAFB)![Express.js](https://img.shields.io/badge/4.18.2-%2361DAFB.svg?style=flat-square&logoColor=%23404d59)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=flat-square&logo=npm&logoColor=white)![NPM](https://img.shields.io/badge/10.2.4-white.svg?style=flat-square&logoColor=%23CB3837)
+
+![JavaScript](https://img.shields.io/badge/JavaScript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E)![JavaScript](https://img.shields.io/badge/ES2023-%23F7DF1E.svg?style=flat-square&logoColor=%23323330)
+![React](https://img.shields.io/badge/React-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB)![React](https://img.shields.io/badge/19.0-%2361DAFB.svg?style=flat-square&logoColor=%2320232a)
+![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?style=flat-square&logo=vuedotjs&logoColor=%234FC08D)![Vue.js](https://img.shields.io/badge/3.4-%234FC08D.svg?style=flat-square&logoColor=%2335495e)
+![jQuery](https://img.shields.io/badge/jQuery-%230769AD.svg?style=flat-square&logo=jquery&logoColor=white)![jQuery](https://img.shields.io/badge/3.7-white.svg?style=flat-square&logoColor=%230769AD)
+
+![Python](https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=ffdd54)![Python](https://img.shields.io/badge/3.12-ffdd54?style=flat-square&logoColor=3670A0)
+![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white)![Java](https://img.shields.io/badge/21-white.svg?style=flat-square&logoColor=%23ED8B00)
+![Kotlin](https://img.shields.io/badge/Kotlin-%237F52FF.svg?style=flat-square&logo=kotlin&logoColor=white)![Kotlin](https://img.shields.io/badge/2.0-white.svg?style=flat-square&logoColor=%237F52FF)
+![Swift](https://img.shields.io/badge/Swift-F54A2A?style=flat-square&logo=swift&logoColor=white)![Swift](https://img.shields.io/badge/5.10-white?style=flat-square&logoColor=F54A2A)
+![C](https://img.shields.io/badge/C-%2300599C.svg?style=flat-square&logo=c&logoColor=white)![C](https://img.shields.io/badge/C23-white.svg?style=flat-square&logoColor=%2300599C)
+![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white)![C++](https://img.shields.io/badge/23-white.svg?style=flat-square&logoColor=%2300599C)
+![PHP](https://img.shields.io/badge/PHP-%23777BB4.svg?style=flat-square&logo=php&logoColor=white)![PHP](https://img.shields.io/badge/8.3-white.svg?style=flat-square&logoColor=%23777BB4)
+
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white)![MongoDB](https://img.shields.io/badge/7.0-white.svg?style=flat-square&logoColor=%234ea94b)
+![MySQL](https://img.shields.io/badge/MySQL-%2300f.svg?style=flat-square&logo=mysql&logoColor=white)![MySQL](https://img.shields.io/badge/8.2-white.svg?style=flat-square&logoColor=%2300f)
+![SQLite](https://img.shields.io/badge/SQLite-%2307405e.svg?style=flat-square&logo=sqlite&logoColor=white)![SQLite](https://img.shields.io/badge/3.45-white.svg?style=flat-square&logoColor=%2307405e)
+
+![SwiftUI](https://img.shields.io/badge/SwiftUI-F05138?style=flat-square&logo=swift&logoColor=white)![SwiftUI](https://img.shields.io/badge/4.0-white?style=flat-square&logoColor=F05138)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)![Linux](https://img.shields.io/badge/6.8-black?style=flat-square&logoColor=FCC624)
 
 > “I’m not a wizard, I just play one in my repo.” – Me, probably
 
@@ -34,35 +60,6 @@
 * How to not accidentally nuke a Linux install (again).
 * Datadog, because apparently, Splunk was too user-friendly.
 * Why people use TikTok for more than just dancing (still unconvinced).
-
----
-
-### 🛠️ Tech Stack:
-
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
-![Node.js](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![Vue.js](https://img.shields.io/badge/vuejs-%3335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
-![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
-
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white)
-![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
-
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
-![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)
-
-![SwiftUI](https://img.shields.io/badge/SwiftUI-F05138?style=for-the-badge&logo=swift&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ---
 
